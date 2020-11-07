@@ -28,9 +28,9 @@ Sub TickerSummary()
         ws.Range("J1").Value = "Yearly Change"
         ws.Range("K1").Value = "Percent Change"
         ws.Range("L1").Value = "Total Volume"
-              
+
         ' Use in yearlyChange calculation
-        openPrice = Cells(2, 3).Value
+        openPrice = ws.Cells(2, 3).Value
         ' Determine the Last Row
         LastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
         
